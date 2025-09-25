@@ -33,8 +33,8 @@ const Trabajo=require("./trabajo.model.js")(sequelize,Sequelize); ;
 
 
 
-db.clientes = Persona;
-db.vehiculos =Trabajo;
+db.personas = Persona;
+db.trabajos =Trabajo;
 
 
 Persona.hasMany(Trabajo,{foreignKey:"id_persona"});
